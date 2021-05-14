@@ -1,0 +1,123 @@
+:root {
+	--main-color: #2fb7ec;
+  }
+  
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    height: 52px;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición*/
+}
+.header__title{
+    color: var(--main-color);
+    font-size: 22px;
+    margin-left: 10px;
+}
+.header__rigth{
+    margin: 0 32px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    
+}
+.header__rigth--search{
+    border: 1px solid rgb(212, 227, 235);
+    border-radius: 4px 0px 0px 4px;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.icon-search{
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-search input{
+    border: 0;
+    margin: 0px;
+    padding: 0px 8px 0px 0px;
+    color: rgb(25, 42, 50);
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.header__search__button button{
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    padding: 0px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    min-width: 40px;
+    background-color: rgb(47, 183, 236);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.header__search__button button:hover{
+    background-color: #2688af;
+    transition: .5s;
+}
+.header__search__perfil{
+    max-height: 40px;
+    width: 40px;
+    font-size: 12px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.header__search__perfil img{
+    display: flex;
+    align-items: center;
+    clip-path: circle(40%);
+    width: 90%;
+}
+.header__search__carbuy{
+    margin-left: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__search__carbuy i{
+    font-size: 20px;
+}
+.header__search__carbuy i:hover{
+    color: rgb(71, 71, 71);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background:#2fb7ec;
+    border-radius: 6px; 
+}
+::-webkit-scrollbar-thumb:hover{
+    
+    background:#2688af;
+}
