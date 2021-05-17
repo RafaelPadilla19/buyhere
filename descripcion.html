@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/header__search.css">
+    <link rel="stylesheet" href="css/description.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>Descripcion</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__title">BuyHere</div>
+        <div class="header__rigth">
+          <div class="header__rigth--search">
+            <div class="icon-search">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="input-search">
+              <input type="text" name="" placeholder="¿Que quieres encontrar?" />
+            </div>
+          </div>
+          <div class="header__search__button">
+            <button>Buscar</button>
+          </div>
+  
+          <div class="header__search__carbuy">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="header__search__perfil">
+            <i class="fas fa-envelope"></i>
+            <p>Contactanos</p>
+          </div>
+        </div>
+      </header>
+      <section class="container">
+        <div class="container__product">
+          <h3>Nombre del producto</h3>
+          <img src="images/auriculares.png" alt="audiculares">
+        </div>
+        <aside class="container__aside">
+          <h3>Marca: Microsoft</h3>
+          <h4>Tipo de producto: Audifonos</h4>
+          <h4>Descripcion: Audifinos microsoft </h4>
+          <h2>Precio: 20.30</h2>
+          <br>
+          <h4>Forma de Pago</h4>
+          <select name="pago">
+            <option value="Post_entrega">Post Entrega</option>
+            <option value="Paypal">Paypal</option>
+            <option value="Targeta_de_credito">Tarjeta de credito</option>
+            <option value="Tranferencia_bancaria">Transferencia bancaria</option>
+          </select>
+          <button>Comprar</button>
+        </aside>  
+      </section>
+      <footer>
+        <div class="footer">
+          <p>Derechos reservados 2021</p>
+        </div>
+      </footer>
 </body>
 </html>

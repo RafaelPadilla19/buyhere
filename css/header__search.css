@@ -18,9 +18,12 @@ body{
     justify-content: space-between;
     height: 52px;
     width: 100%;
-	
-	top: 0; /* Posicionamos la cabecera pegada arriba */
-	position: fixed; /* Hacemos que la cabecera tenga una posición*/
+    
+    position: sticky;
+    top: 0;
+
+    
+ /* Hacemos que la cabecera tenga una posición*/
 }
 .header__title{
     color: var(--main-color);
